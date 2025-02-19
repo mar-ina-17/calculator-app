@@ -1,0 +1,17 @@
+.calc-btn-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: gray;
+  text-align: center;
+  align-content: center;
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.calc-btn-box:hover {
+  background-color: rgb(164, 163, 163);
+}

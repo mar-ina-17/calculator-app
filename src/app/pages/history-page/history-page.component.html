@@ -1,0 +1,22 @@
+<div class="history-wrapper">
+  <section class="history-container">
+    <p *ngIf="!historyList?.length" class="no-history">
+      No recent calculations
+    </p>
+    <div *ngIf="historyList?.length" class="history-list">
+      <ul>
+        <li *ngFor="let entry of historyList">
+          <strong>{{ entry.key | date : "dd-MM-yyyy HH:mm:ss" }}:</strong>
+          {{ entry.value }}
+        </li>
+      </ul>
+    </div>
+  </section>
+  <button
+    *ngIf="historyList?.length"
+    class="clear-btn"
+    (click)="clearHistory()"
+  >
+    Clear history
+  </button>
+</div>

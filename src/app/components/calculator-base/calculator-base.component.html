@@ -1,0 +1,9 @@
+<div class="calc-base-box">
+  <input type="text" class="calc-input" [value]="result" readonly />
+  <div class="calc-grid">
+    <app-calculator-button
+      *ngFor="let button of buttons"
+      [value]="button"
+    ></app-calculator-button>
+  </div>
+</div>

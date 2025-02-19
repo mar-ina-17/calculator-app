@@ -1,0 +1,41 @@
+.calc-base-box {
+  background: rgb(15, 14, 14);
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px lightgray;
+}
+
+.calc-input {
+  width: 90%;
+  height: 60px;
+  font-size: 28px;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background: gray;
+  color: white;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 4em);
+  gap: 5px;
+  width: 90%;
+  height: calc(100% - 30px);
+  align-content: end;
+}
+
+app-calculator-button {
+  margin: auto;
+}
